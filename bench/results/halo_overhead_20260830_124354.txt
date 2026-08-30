@@ -1,0 +1,9 @@
+# halo3d S2 communication-overhead bench
+# host: Darwin Jayashre-2.local 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:29 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T8122 arm64
+# command per row: mpirun --oversubscribe -n P /Users/jayashre/Developer/VSC/halo3d/.build/jacobi3d_mpi 64 64 64 200 /dev/null
+# grid=64x64x64 niters=200
+ranks  step_ms(max)   recvwait_pct(max)        sendwait_pct(max)       
+1      0.6373         0.02                     0.02                    
+2      0.3337         5.24                     0.06                    
+4      0.1726         6.21                     0.09                    
+8      0.2085         57.07                    0.28                    
